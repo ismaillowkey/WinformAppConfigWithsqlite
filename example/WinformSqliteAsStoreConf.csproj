@@ -101,7 +101,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SqliteConfigStore\SqliteConfigStore.csproj">
+    <ProjectReference Include="..\lib\SqliteConfigStore.csproj">
       <Project>{bc89e0be-5aa1-4f87-a87a-4eab7f456a10}</Project>
       <Name>SqliteConfigStore</Name>
     </ProjectReference>
