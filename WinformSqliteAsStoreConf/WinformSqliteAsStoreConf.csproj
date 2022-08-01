@@ -101,6 +101,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SqliteConfigStore\SqliteConfigStore.csproj">
+      <Project>{bc89e0be-5aa1-4f87-a87a-4eab7f456a10}</Project>
+      <Name>SqliteConfigStore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
