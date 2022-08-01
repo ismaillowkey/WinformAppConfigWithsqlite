@@ -31,6 +31,11 @@ namespace WinformSqliteAsStoreConf
         {
             this.BtnWriteKey = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.TxtReadMysqlDBName = new System.Windows.Forms.TextBox();
+            this.TxtReadMysqlPassword = new System.Windows.Forms.TextBox();
+            this.TxtReadMysqlUsername = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.BtnRead = new System.Windows.Forms.Button();
@@ -38,11 +43,7 @@ namespace WinformSqliteAsStoreConf
             this.TxtReadMysqlPort = new System.Windows.Forms.TextBox();
             this.TxtReadMysqlUrl = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TxtReadMysqlUsername = new System.Windows.Forms.TextBox();
-            this.TxtReadMysqlPassword = new System.Windows.Forms.TextBox();
-            this.TxtReadMysqlDBName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +77,45 @@ namespace WinformSqliteAsStoreConf
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Read and Write Key";
+            // 
+            // TxtReadMysqlDBName
+            // 
+            this.TxtReadMysqlDBName.Location = new System.Drawing.Point(117, 119);
+            this.TxtReadMysqlDBName.Name = "TxtReadMysqlDBName";
+            this.TxtReadMysqlDBName.Size = new System.Drawing.Size(100, 20);
+            this.TxtReadMysqlDBName.TabIndex = 11;
+            // 
+            // TxtReadMysqlPassword
+            // 
+            this.TxtReadMysqlPassword.Location = new System.Drawing.Point(117, 95);
+            this.TxtReadMysqlPassword.Name = "TxtReadMysqlPassword";
+            this.TxtReadMysqlPassword.Size = new System.Drawing.Size(100, 20);
+            this.TxtReadMysqlPassword.TabIndex = 10;
+            // 
+            // TxtReadMysqlUsername
+            // 
+            this.TxtReadMysqlUsername.Location = new System.Drawing.Point(117, 71);
+            this.TxtReadMysqlUsername.Name = "TxtReadMysqlUsername";
+            this.TxtReadMysqlUsername.Size = new System.Drawing.Size(100, 20);
+            this.TxtReadMysqlUsername.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 122);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "MySQL DBName";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 98);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "MySQL Password";
             // 
             // label7
             // 
@@ -131,56 +171,27 @@ namespace WinformSqliteAsStoreConf
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 201);
+            this.label4.Location = new System.Drawing.Point(48, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "File configuration : dbsettings.db";
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 98);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "MySQL Password";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 122);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "MySQL DBName";
-            // 
-            // TxtReadMysqlUsername
-            // 
-            this.TxtReadMysqlUsername.Location = new System.Drawing.Point(117, 71);
-            this.TxtReadMysqlUsername.Name = "TxtReadMysqlUsername";
-            this.TxtReadMysqlUsername.Size = new System.Drawing.Size(100, 20);
-            this.TxtReadMysqlUsername.TabIndex = 9;
-            // 
-            // TxtReadMysqlPassword
-            // 
-            this.TxtReadMysqlPassword.Location = new System.Drawing.Point(117, 95);
-            this.TxtReadMysqlPassword.Name = "TxtReadMysqlPassword";
-            this.TxtReadMysqlPassword.Size = new System.Drawing.Size(100, 20);
-            this.TxtReadMysqlPassword.TabIndex = 10;
-            // 
-            // TxtReadMysqlDBName
-            // 
-            this.TxtReadMysqlDBName.Location = new System.Drawing.Point(117, 119);
-            this.TxtReadMysqlDBName.Name = "TxtReadMysqlDBName";
-            this.TxtReadMysqlDBName.Size = new System.Drawing.Size(100, 20);
-            this.TxtReadMysqlDBName.TabIndex = 11;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 221);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "auto create file dbsettings.db if not exist";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 229);
+            this.ClientSize = new System.Drawing.Size(264, 247);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox3);
             this.Name = "Form1";
@@ -208,6 +219,7 @@ namespace WinformSqliteAsStoreConf
         private System.Windows.Forms.TextBox TxtReadMysqlUsername;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
     }
 }
 
