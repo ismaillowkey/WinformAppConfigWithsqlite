@@ -12,18 +12,20 @@ namespace WinformSqliteAsStoreConf
 
         private void BtnWriteKey_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TxtWriteSection.Text) || string.IsNullOrEmpty(TxtWriteKey.Text) || string.IsNullOrEmpty(TxtWriteValue.Text))
-                MessageBox.Show("Error blank setting", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            else
-                ConfParser.WriteKey(TxtWriteSection.Text, TxtWriteKey.Text, TxtWriteValue.Text);
+            PersistentValue.MYSQL_URL = TxtReadMysqlUrl.Text;
+            PersistentValue.MYSQL_PORT = Convert.ToInt32(TxtReadMysqlPort.Text);
+            PersistentValue.MYSQL_USERNAME = TxtReadMysqlUsername.Text;
+            PersistentValue.MYSQL_PASSWORD = TxtReadMysqlPassword.Text;
+            PersistentValue.MYSQL_DBNAME = TxtReadMysqlDBName.Text;
         }
 
         private void BtnRead_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TxtReadSection.Text) || string.IsNullOrEmpty(TxtReadKey.Text))
-                MessageBox.Show("Error blank setting", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            else
-                TxtReadValue.Text = ConfParser.ReadKey(TxtReadSection.Text, TxtReadKey.Text);
+            TxtReadMysqlUrl.Text = PersistentValue.MYSQL_URL;
+            TxtReadMysqlPort.Text = PersistentValue.MYSQL_PORT.ToString();
+            TxtReadMysqlUsername.Text = PersistentValue.MYSQL_USERNAME;
+            TxtReadMysqlPassword.Text = PersistentValue.MYSQL_PASSWORD;
+            TxtReadMysqlDBName.Text = PersistentValue.MYSQL_DBNAME;
         }
     }
 }
